@@ -16,6 +16,10 @@ img {
     max-width: 100%;
 }
 
+h1 {
+    margin: 0;
+}
+
 h3 {
     font-weight: lighter;
 }
@@ -36,12 +40,18 @@ h3 {
 
 nav a {
     display: block;
-    padding: 15px 0;
+    margin: 10px 0;
+    padding: 10px 0;
     text-transform: uppercase;
+    color: black;
+    background-color: white;
+    font-weight: 900;
 }
 
 /*HEADER*=====================================*/
 
 header {
-    margin-bottom: 100px;
+    padding: 25px 0 100px 0;
+    background-color: #f7f7f7;
+    padding-bottom: 50px;
 }
