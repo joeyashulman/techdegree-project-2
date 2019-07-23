@@ -79,7 +79,12 @@ header {
     margin-bottom: 25px;
 }
 
-.tagline {
+.tagline-top {
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.tagline-bot {
     font-weight: 300;
     line-height: 35px;
 }
@@ -136,4 +141,134 @@ footer {
     content: "";
     clear: both;
     display: table;
+  }
+
+/*MEDIA QUERIES*=====================================*/
+
+@media (min-width: 0px) {
+    .sub-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    nav {
+    align-content: center;  
+    }
+
+
+    nav li { 
+        display: inline-block;
+        margin-left: 15px;
+        background: none;
+    }
+
+    nav a {
+        background: none;
+        padding: 15px;
+    }
+
+
+    .prof-img {
+        float: right;
+        width: 40%;
+        padding-top: 0;
+        margin-left: 10px;
+    }
+
+    .tagline-top {
+        float: left;
+        text-align: left;
+        width: 57%;
+        margin-right: 10px;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .sub-nav {
+        margin: 0;
+        padding: 20px 0;
+        display: block;
+        float: right;
+    }
+
+    .sub-nav li {
+        display: inline-block;
+        margin-left: 15px;
+        text-transform: uppercase;
+    }
+
+    .portfolio-item-left {
+        display: block;
+        float: left;
+        width: 49%;
+        min-height: 460px;
+       
+    }
+    .portfolio-item-right {
+        display: block;
+        float: right;
+        width: 49%;
+        min-height: 460px;
+    
+    }
+
+  }
+
+  @media (min-width: 1024px) {
+
+    .name {
+        float: left;
+        padding: 10px 0;
+    }
+
+    nav {
+        float: right;
+    }
+
+    .main-nav a {
+        padding: 10px;
+    }
+
+    .main-nav {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .prof-img {
+        clear: both;
+    }
+
+    .portfolio-item-left {
+        display: block;
+        float: left;
+        width: 31%;
+        min-height: 460px;
+        margin: auto;
+       
+    }
+    .portfolio-item-right {
+        display: block;
+        float: left;
+        width: 31%;
+        min-height: 460px;
+        margin: auto;
+
+    }
+
+    .triple-left {
+        float: left;
+    }
+
+    .triple-center {
+        float: none;
+    }
+
+    .triple-right {
+        float: right;
+    }
+
   }
