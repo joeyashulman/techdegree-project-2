@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: black;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -23,18 +27,25 @@ h1 {
     font-weight: 900;
 }
 
-h2 {
-   
-}
 
 h3 {
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 37px;
-    padding: 40px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 25px;
     margin: 0;
 }
 
+p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+}
+
+hr {
+    margin: 40px 0 30px 0;
+}
 
 /*NAV*=====================================*/
 
@@ -65,12 +76,17 @@ header {
 
 .prof-img {
     padding-top: 40px;
+    margin-bottom: 25px;
 }
 
+.tagline {
+    font-weight: 300;
+    line-height: 35px;
+}
 /*MAIN*=====================================*/
 
-.portfolio-item {
-    margin-bottom: 75px;
+.portfolio-item-text {
+    margin: 40px 0;
 }
 
 .container {
@@ -80,18 +96,42 @@ header {
     max-width: 1440px;
 }
 
+#portfolio {
+    padding: 35px 0;
+}
+
 /*FOOTER*=====================================*/
 
 
 footer {
     background-color: #f7f7f7;
     padding-top: 50px;
+    margin-top: 100px;
 }
 
 .back-to-top {
-    margin-bottom: 0;
+    float: right;
+    padding: 20px 0;
+    margin: auto;
+    line-height: 1.15;
+    text-transform: uppercase;
+    font-weight: 500;
+
 }
 
+.bottom-name {
+    float: left;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.footer-menu{
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+
+/*CLEARFIX*=====================================*/
 .clearfix::after {
     content: "";
     clear: both;

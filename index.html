@@ -13,68 +13,84 @@
     <header>
     <div class="container">
         <nav>
-            <h1 class="name">Joey Shulman</h1>
+            <h1 id="home" class="name">Joey Shulman</h1>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <img class="prof-img" src="images/responsive-layout-profile.png" alt="Profile image">
 
-        <h3>Hi! I'm a front end developer that loves responsive design and CSS. I recently finished a degree in front end development at Treehouse and am excited to put my skills to use!</h3>
+        <h3 class="tagline">Hi! I'm a front end developer that loves responsive design and CSS. I recently finished a degree in front end development at Treehouse and am excited to put my skills to use!</h3>
     </div>
     </header>
 
     <main class="container">
-        <h2>PORTFOLIO</h2>
+        <h2 id="portfolio">PORTFOLIO</h2>
 
         <div class="portfolio-item">
-            <img src="images/portfolio-1.png" alt="Marketing page screenshot">
-            <h3>Marketing Page</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+           <img src="images/portfolio-1.png" alt="Marketing page screenshot">
+                <div class="portfolio-item-text">
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+                </div>
         </div>
 
         <div class="portfolio-item">
             <img src="images/portfolio-2.png" alt="Marketing page screenshot">
-            <h3>Search Page</h3>
-            <p>This project searches through a specific database to find information the user is trying to look up.</p>
+            <div class="portfolio-item-text">
+                <h3>Search Page</h3>
+                <p>This project searches through a specific database to find information the user is trying to look up.</p>
+            </div>
         </div>
 
         <div class="portfolio-item"> 
             <img src="images/portfolio-3.png" alt="Marketing page screenshot">
-            <h3>Travel App</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            <div class="portfolio-item-text">
+                <h3>Travel App</h3>
+                <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            </div>
         </div>
 
         <div class="portfolio-item">
             <img src="images/portfolio-4.png" alt="Marketing page screenshot">
-            <h3>Map of Favorite Spots</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            <div class="portfolio-item-text">
+                <h3>Map of Favorite Spots</h3>
+                <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            </div>
         </div>
 
         <div class="portfolio-item">
             <img src="images/portfolio-5.png" alt="Marketing page screenshot">
-            <h3>Photo Gallery</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            <div class="portfolio-item-text">
+                <h3>Photo Gallery</h3>
+                <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            </div>
         </div>
 
         <div class="portfolio-item">
             <img src="images/portfolio-6.png" alt="Marketing page screenshot">
-            <h3>Calculator</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            <div class="portfolio-item-text">
+                <h3>Calculator</h3>
+                <p>This project shows the front page of a marketing website meant for a specific business I am interested in.</p>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <h2>CONTACT</h2>
-            <h3>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</h3>
+            <h2 id="contact">CONTACT</h2>
+            <h3 class="tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</h3>
+            <h3>Phone &nbsp&nbsp&nbsp&nbsp&nbsp<strong>1-234-567-8910</strong></h3>
+            <h3>Email &nbsp&nbsp&nbsp&nbsp&nbsp<strong>joeyashulman@gmail.com</strong></h3>
 
             <hr>
-            <h1>Joey Shulman</h1>
-            <h3 class="back-to-top">Back to Top</h3>
+            <div class="footer-menu clearfix">
+                <h3 class="bottom-name"><strong>Joey Shulman</strong></h3>
+                <h3 class="back-to-top"><a href="#home">Back to Top</a></h3>
+            </div>
         </div>
     </footer>
 </body>
