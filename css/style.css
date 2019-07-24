@@ -216,7 +216,12 @@ footer {
     
     }
 
+    .tagline-bot {
+        max-width: 600px;
+        margin: auto;
+
   }
+}
 
   @media (min-width: 1024px) {
 
@@ -242,6 +247,10 @@ footer {
         clear: both;
     }
 
+    .top-section {
+        padding-top: 50px;
+    }
+
     .portfolio-item-left {
         display: block;
         float: left;
@@ -261,14 +270,30 @@ footer {
 
     .triple-left {
         float: left;
+        min-height: 300px;
+        width: 32.2%;
     }
 
     .triple-center {
-        float: none;
+        float: left;
+        min-height: 300px;
+        margin: 0 15px;
+        width: 32.2%;
     }
 
     .triple-right {
-        float: right;
+        float: left;
+        min-height: 300px;
+        width: 32.2%;
     }
 
-  }
+    footer {
+        margin-top: 25px;
+    }
+
+    .tagline-bot {
+        max-width: 600px;
+        margin: auto;
+    }
+ 
+}
