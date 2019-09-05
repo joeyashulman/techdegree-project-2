@@ -1,3 +1,5 @@
+/*ALL*=====================================*/
+
 * {
     font-family: Lato;
     box-sizing: border-box;
@@ -5,7 +7,9 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
+
 
 ul {
     list-style: none;
@@ -18,14 +22,74 @@ img {
 
 h1 {
     margin: 0;
+    font-weight: 900;
 }
+
 
 h3 {
-    font-weight: lighter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 25px;
+    margin: 0;
 }
 
-.portfolio-item {
-    margin-bottom: 75px;
+p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+}
+
+hr {
+    margin: 40px 0 30px 0;
+}
+
+/*NAV*=====================================*/
+
+nav a {
+    display: block;
+    margin: 10px 0;
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    font-weight: 900;
+}
+
+nav a:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.name {
+    padding-bottom: 15px;
+}
+
+/*HEADER*=====================================*/
+
+header {
+    padding: 25px 0 25px 0;
+    background-color: #f7f7f7;
+}
+
+.prof-img {
+    padding-top: 40px;
+    margin-bottom: 25px;
+}
+
+.tagline-top {
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.tagline-bot {
+    font-weight: 300;
+    line-height: 35px;
+}
+/*MAIN*=====================================*/
+
+.portfolio-item-text {
+    margin: 40px 0;
 }
 
 .container {
@@ -35,23 +99,199 @@ h3 {
     max-width: 1440px;
 }
 
-
-/*NAV*=====================================*/
-
-nav a {
-    display: block;
-    margin: 10px 0;
-    padding: 10px 0;
-    text-transform: uppercase;
-    color: black;
-    background-color: white;
-    font-weight: 900;
+#portfolio {
+    padding: 35px 0;
 }
 
-/*HEADER*=====================================*/
+/*FOOTER*=====================================*/
 
-header {
-    padding: 25px 0 100px 0;
+
+footer {
     background-color: #f7f7f7;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.back-to-top {
+    float: right;
+    padding: 20px 0;
+    margin: auto;
+    line-height: 1.15;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.bottom-name {
+    float: left;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.footer-menu{
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+
+/*CLEARFIX*=====================================*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*MEDIA QUERIES*=====================================*/
+
+@media (min-width: 0px) {
+    .sub-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    nav {
+    align-content: center;  
+    }
+
+
+    nav li { 
+        display: inline-block;
+        margin-left: 15px;
+        background: none;
+    }
+
+    nav a {
+        background: none;
+        padding: 15px;
+    }
+
+
+    .prof-img {
+        float: right;
+        width: 40%;
+        padding-top: 0;
+        margin-left: 10px;
+    }
+
+    .tagline-top {
+        float: left;
+        text-align: left;
+        width: 57%;
+        margin-right: 10px;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .sub-nav {
+        margin: 0;
+        padding: 20px 0;
+        display: block;
+        float: right;
+    }
+
+    .sub-nav li {
+        display: inline-block;
+        margin-left: 15px;
+        text-transform: uppercase;
+    }
+
+    .portfolio-item-left {
+        display: block;
+        float: left;
+        width: 49%;
+        min-height: 460px;
+       
+    }
+    .portfolio-item-right {
+        display: block;
+        float: right;
+        width: 49%;
+        min-height: 460px;
+    
+    }
+
+    .tagline-bot {
+        max-width: 600px;
+        margin: auto;
+
+  }
+}
+
+  @media (min-width: 1024px) {
+
+    .name {
+        float: left;
+        padding: 10px 0;
+    }
+
+    nav {
+        float: right;
+    }
+
+    .main-nav a {
+        padding: 10px;
+    }
+
+    .main-nav {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .prof-img {
+        clear: both;
+    }
+
+    .top-section {
+        padding-top: 50px;
+    }
+
+    .portfolio-item-left {
+        display: block;
+        float: left;
+        width: 31%;
+        min-height: 460px;
+        margin: auto;
+       
+    }
+    .portfolio-item-right {
+        display: block;
+        float: left;
+        width: 31%;
+        min-height: 460px;
+        margin: auto;
+
+    }
+
+    .triple-left {
+        float: left;
+        min-height: 300px;
+        width: 32.2%;
+    }
+
+    .triple-center {
+        float: left;
+        min-height: 300px;
+        margin: 0 15px;
+        width: 32.2%;
+    }
+
+    .triple-right {
+        float: left;
+        min-height: 300px;
+        width: 32.2%;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+
+    .tagline-bot {
+        max-width: 600px;
+        margin: auto;
+    }
+ 
 }
